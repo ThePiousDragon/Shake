@@ -2328,7 +2328,6 @@ let sonnets = [Sonnet(roman:"I", text: """
 
 let numberOfSonnets = 154
 let shakespeareBirthYear = 1564
-let todaysDate = 271
 
 let date = Date() // now
 let cal = Calendar.current
