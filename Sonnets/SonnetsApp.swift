@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct SonnetsApp: App {
     var body: some Scene {
-        MenuBarExtra("Sonnet of the day", systemImage: "hammer") {
+        MenuBarExtra("Sonnet of the day", image: "Shake22") {
             ContentView()
         }
         .menuBarExtraStyle(.window)
