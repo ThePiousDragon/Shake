@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text(randomSonnet.roman)
+            Text(String(arabicNumber))
                 .padding()
             Text(randomSonnet.text)
                 .fixedSize()

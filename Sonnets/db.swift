@@ -2326,7 +2326,6 @@ let sonnets = [Sonnet(roman:"I", text: """
 ]
 
 
-let numberOfSonnets = 154
 let shakespeareBirthYear = 1564
 
 let date = Date() // now
@@ -2334,9 +2333,10 @@ let cal = Calendar.current
 let dayOfTheYear = cal.ordinality(of: .day, in: .year, for: date)
 
 func getSonnetOfTheDay(day: Int) -> Int {
-    let sonnetOfTheDay = ((day * shakespeareBirthYear) % numberOfSonnets) - 1
+    let sonnetOfTheDay = ((day * shakespeareBirthYear) % sonnets.count)
     return(sonnetOfTheDay)
 }
 
 var sonnetNumber = (getSonnetOfTheDay(day: dayOfTheYear!))
+var arabicNumber = sonnetNumber + 1
 var randomSonnet = sonnets[sonnetNumber]
