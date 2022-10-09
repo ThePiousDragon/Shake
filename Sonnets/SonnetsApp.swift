@@ -13,5 +13,9 @@ struct SonnetsApp: App {
         WindowGroup {
             ContentView()
         }
+        MenuBarExtra("Sonnet of the day", systemImage: "hammer") {
+            ContentView()
+        }
+        .menuBarExtraStyle(.window)
     }
 }
