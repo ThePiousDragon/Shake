@@ -5,13 +5,7 @@
 //  Created by dimitar on 05/10/2022.
 //
 
-import Foundation
 
-struct Sonnet {
-    let roman: String
-    let text: String
-    let author = "William Shakespeare"
-}
 
 let sonnets = [Sonnet(roman:"I", text: """
   From fairest creatures we desire increase,
@@ -2324,19 +2318,3 @@ let sonnets = [Sonnet(roman:"I", text: """
     Love’s fire heats water, water cools not love.
 """)
 ]
-
-
-let shakespeareBirthYear = 1564
-
-let date = Date() // now
-let cal = Calendar.current
-let dayOfTheYear = cal.ordinality(of: .day, in: .year, for: date)
-
-func getSonnetOfTheDay(day: Int) -> Int {
-    let sonnetOfTheDay = ((day * shakespeareBirthYear) % sonnets.count)
-    return(sonnetOfTheDay)
-}
-
-var sonnetNumber = (getSonnetOfTheDay(day: dayOfTheYear!))
-var arabicNumber = sonnetNumber + 1
-var randomSonnet = sonnets[sonnetNumber]

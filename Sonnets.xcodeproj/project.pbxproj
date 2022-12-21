@@ -12,6 +12,7 @@
 		43BC02EF28F25D6C009BD0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC02EE28F25D6C009BD0EC /* Assets.xcassets */; };
 		43BC02F228F25D6C009BD0EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BC02F128F25D6C009BD0EC /* Preview Assets.xcassets */; };
 		43BC02FA28F25D87009BD0EC /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC02F928F25D87009BD0EC /* db.swift */; };
+		43FDFA34295363D700CC9B50 /* functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDFA33295363D700CC9B50 /* functionality.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		43BC02F128F25D6C009BD0EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43BC02F328F25D6C009BD0EC /* Sonnets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sonnets.entitlements; sourceTree = "<group>"; };
 		43BC02F928F25D87009BD0EC /* db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
+		43FDFA33295363D700CC9B50 /* functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functionality.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				43BC02EA28F25D6A009BD0EC /* SonnetsApp.swift */,
 				43BC02EC28F25D6A009BD0EC /* ContentView.swift */,
 				43BC02F928F25D87009BD0EC /* db.swift */,
+				43FDFA33295363D700CC9B50 /* functionality.swift */,
 				43BC02EE28F25D6C009BD0EC /* Assets.xcassets */,
 				43BC02F328F25D6C009BD0EC /* Sonnets.entitlements */,
 				43BC02F028F25D6C009BD0EC /* Preview Content */,
@@ -100,7 +103,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					43BC02E628F25D6A009BD0EC = {
 						CreatedOnToolsVersion = 14.1;
@@ -145,6 +148,7 @@
 				43BC02ED28F25D6A009BD0EC /* ContentView.swift in Sources */,
 				43BC02FA28F25D87009BD0EC /* db.swift in Sources */,
 				43BC02EB28F25D6A009BD0EC /* SonnetsApp.swift in Sources */,
+				43FDFA34295363D700CC9B50 /* functionality.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +188,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -244,6 +249,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -270,9 +276,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sonnets/Sonnets.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sonnets/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -296,9 +304,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sonnets/Sonnets.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Sonnets/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
